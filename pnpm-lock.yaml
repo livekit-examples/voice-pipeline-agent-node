@@ -22,7 +22,7 @@ importers:
         version: 0.4.3(zod@3.23.8)
       '@livekit/agents-plugin-silero':
         specifier: ^0.4.3
-        version: 0.4.3
+        version: 0.4.4
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -308,11 +308,14 @@ packages:
   '@livekit/agents-plugin-openai@0.4.3':
     resolution: {integrity: sha512-HDMK/Qn05RopViImRYT/eIfhS309HN/EfJC8342TP22pL9luBbziccBE22XzByojQNTvW5szCZGLPKD9346hug==}
 
-  '@livekit/agents-plugin-silero@0.4.3':
-    resolution: {integrity: sha512-rIFxJffi9A/8eFjs2y9vr1HOJ+OfhRPE4bFHRiOKWhMMbjNc4Lln+/1MnpiC0gRBy/bFRwKEh+b4LtwZhSiPLQ==}
+  '@livekit/agents-plugin-silero@0.4.4':
+    resolution: {integrity: sha512-VEJpsR6O6yEzfV7I3l43UIZVsedrJlR9cFrdVxXEyPhXTqagrm/IJdGFaPk53eglXzMgPRnwgc2FxUPYLabNyA==}
 
   '@livekit/agents@0.4.3':
     resolution: {integrity: sha512-vVNEun6NdshokiCAGLY7ujFR0dzNBZpVo9B7NqoE6wktoggfhkOaydv1I2CJ9nk0hHgi4a2TOytmx9LO4H0oIw==}
+
+  '@livekit/agents@0.4.4':
+    resolution: {integrity: sha512-cAH8XsGyXxyx7lvuiEn/rGVmL9gSeGyzKMVvAABuXV1tiznDyIGv+Zxz8AdLECY+imxQLMCCqGfwXnmnVytb/A==}
 
   '@livekit/mutex@1.1.0':
     resolution: {integrity: sha512-XRLG+z/0uoyDioupjUiskjI06Y51U/IXVPJn7qJ+R3J75XX01irYVBM9MpxeJahpVoe9QhU4moIEolX+HO9U9g==}
@@ -630,6 +633,10 @@ packages:
 
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
+    engines: {node: '>= 8'}
+
+  cross-spawn@7.0.5:
+    resolution: {integrity: sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==}
     engines: {node: '>= 8'}
 
   data-view-buffer@1.0.1:
@@ -1164,6 +1171,10 @@ packages:
 
   livekit-server-sdk@2.7.3:
     resolution: {integrity: sha512-dBiyMJ2o3Adw7aBVuFxVOlYHmiZtGGS9zVksMuv/wiEVHY+6XSDzo0X67pZVkyGlq1moF4YZAReVY2Dbxve8NQ==}
+    engines: {node: '>=19'}
+
+  livekit-server-sdk@2.8.1:
+    resolution: {integrity: sha512-l8egXU10jPuRJM2Df9Gk/KPEk6tBV0JEGG19cD5QeQtyIMgqULCCd/5yyG2FRvcWRf7pEyZZMXi63zDn7uaKHQ==}
     engines: {node: '>=19'}
 
   locate-path@6.0.0:
@@ -1961,9 +1972,9 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@livekit/agents-plugin-silero@0.4.3':
+  '@livekit/agents-plugin-silero@0.4.4':
     dependencies:
-      '@livekit/agents': 0.4.3
+      '@livekit/agents': 0.4.4
       '@livekit/rtc-node': 0.11.1
       onnxruntime-node: 1.20.0
       ws: 8.18.0
@@ -1979,6 +1990,22 @@ snapshots:
       '@livekit/typed-emitter': 3.0.0
       commander: 12.1.0
       livekit-server-sdk: 2.7.3
+      pino: 8.21.0
+      pino-pretty: 11.3.0
+      ws: 8.18.0
+      zod: 3.23.8
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@livekit/agents@0.4.4':
+    dependencies:
+      '@livekit/mutex': 1.1.0
+      '@livekit/protocol': 1.27.1
+      '@livekit/rtc-node': 0.11.1
+      '@livekit/typed-emitter': 3.0.0
+      commander: 12.1.0
+      livekit-server-sdk: 2.8.1
       pino: 8.21.0
       pino-pretty: 11.3.0
       ws: 8.18.0
@@ -2347,6 +2374,12 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
+  cross-spawn@7.0.5:
+    dependencies:
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
+
   data-view-buffer@1.0.1:
     dependencies:
       call-bind: 1.0.7
@@ -2683,7 +2716,7 @@ snapshots:
 
   foreground-child@3.3.0:
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.5
       signal-exit: 4.1.0
 
   form-data-encoder@1.7.2: {}
@@ -2940,6 +2973,12 @@ snapshots:
       type-check: 0.4.0
 
   livekit-server-sdk@2.7.3:
+    dependencies:
+      '@livekit/protocol': 1.27.1
+      camelcase-keys: 9.1.3
+      jose: 5.9.6
+
+  livekit-server-sdk@2.8.1:
     dependencies:
       '@livekit/protocol': 1.27.1
       camelcase-keys: 9.1.3
