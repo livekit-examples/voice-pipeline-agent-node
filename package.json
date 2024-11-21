@@ -9,11 +9,11 @@
   },
   "packageManager": "pnpm@9.2.0",
   "devDependencies": {
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.13.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.15.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "@types/node": "^22.8.6",
-    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@types/node": "^22.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
@@ -21,11 +21,11 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "@livekit/agents": "^0.4.3",
-    "@livekit/agents-plugin-deepgram": "^0.4.3",
-    "@livekit/agents-plugin-elevenlabs": "^0.4.3",
-    "@livekit/agents-plugin-openai": "^0.5.0",
-    "@livekit/agents-plugin-silero": "^0.4.3",
+    "@livekit/agents": "^0.4.5",
+    "@livekit/agents-plugin-deepgram": "^0.4.5",
+    "@livekit/agents-plugin-elevenlabs": "^0.4.5",
+    "@livekit/agents-plugin-openai": "^0.6.0",
+    "@livekit/agents-plugin-silero": "^0.4.5",
     "dotenv": "^16.4.5",
     "zod": "^3.23.8"
   }
