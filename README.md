@@ -30,7 +30,7 @@ Set up the environment by copying `.env.example` to `.env.local` and filling in 
 - `LIVEKIT_API_KEY`
 - `LIVEKIT_API_SECRET`
 - `OPENAI_API_KEY`
-- `ELEVENLABS_API_KEY`
+- `ELEVEN_API_KEY`
 - `DEEPGRAM_API_KEY`
 
 You can also do this automatically using the LiveKit CLI:
