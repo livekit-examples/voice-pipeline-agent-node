@@ -22,7 +22,7 @@ importers:
         version: 0.6.0(@livekit/agents@0.4.5(@livekit/rtc-node@0.11.1))(@livekit/rtc-node@0.11.1)(zod@3.23.8)
       '@livekit/agents-plugin-silero':
         specifier: ^0.4.5
-        version: 0.4.5(@livekit/agents@0.4.5(@livekit/rtc-node@0.11.1))(@livekit/rtc-node@0.11.1)
+        version: 0.4.6(@livekit/agents@0.4.5(@livekit/rtc-node@0.11.1))(@livekit/rtc-node@0.11.1)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -317,10 +317,10 @@ packages:
       '@livekit/agents': ^0.4.5
       '@livekit/rtc-node': ^0.11.1
 
-  '@livekit/agents-plugin-silero@0.4.5':
-    resolution: {integrity: sha512-klfDhbaRMAhQu1BkcTCQCt+Zpe+F0Ag+LoNnrFPJY9HW1JWxv0zEwRffepyqC9Ed3952X76tdiRe3+FmBJIdMA==}
+  '@livekit/agents-plugin-silero@0.4.6':
+    resolution: {integrity: sha512-SaOrgAQK9105zF37e8dTkzvc5jyQwT2Fn2vNn310U9l6MJpv6yU/GoQKa3/UCMSesp5Pp6iGUO/pVlhyp0R7yw==}
     peerDependencies:
-      '@livekit/agents': ^0.4.5
+      '@livekit/agents': ^0.4.6
       '@livekit/rtc-node': ^0.11.1
 
   '@livekit/agents@0.4.5':
@@ -1980,7 +1980,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@livekit/agents-plugin-silero@0.4.5(@livekit/agents@0.4.5(@livekit/rtc-node@0.11.1))(@livekit/rtc-node@0.11.1)':
+  '@livekit/agents-plugin-silero@0.4.6(@livekit/agents@0.4.5(@livekit/rtc-node@0.11.1))(@livekit/rtc-node@0.11.1)':
     dependencies:
       '@livekit/agents': 0.4.5(@livekit/rtc-node@0.11.1)
       '@livekit/rtc-node': 0.11.1
