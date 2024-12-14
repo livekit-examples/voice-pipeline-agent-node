@@ -12,8 +12,8 @@ importers:
         specifier: ^0.4.5
         version: 0.4.5
       '@livekit/agents-plugin-deepgram':
-        specifier: ^0.4.5
-        version: 0.4.5(@livekit/agents@0.4.5)
+        specifier: ^0.5.0
+        version: 0.5.0(@livekit/agents@0.4.5)
       '@livekit/agents-plugin-elevenlabs':
         specifier: ^0.4.5
         version: 0.4.5(@livekit/agents@0.4.5)
@@ -296,11 +296,11 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@livekit/agents-plugin-deepgram@0.4.5':
-    resolution: {integrity: sha512-Pt3c1jeQFy7gGTLHcvxMqxrr+Ok1wUJYPxaD/KnZZ51pTcPWT5opDn92fp7pTNKvQ62pMgDgIDxwbMsCw1O21g==}
+  '@livekit/agents-plugin-deepgram@0.5.0':
+    resolution: {integrity: sha512-9fYKBNeGrD51d6tcGv/6E7zOluePASyk/JXz8QO2swFcO1aadg9PcmdEXP1dxjORZBNhny7WJb3LLs28S/yZkw==}
     peerDependencies:
-      '@livekit/agents': ^0.4.5
-      '@livekit/rtc-node': ^0.11.1
+      '@livekit/agents': ^0.5.0x
+      '@livekit/rtc-node': ^0.12.1
 
   '@livekit/agents-plugin-elevenlabs@0.4.5':
     resolution: {integrity: sha512-oSqbF4HBMPb17ZbQ5NcJ5HMnIQh8DIUXpR3KtYcFxukgjhEhXJwAgAhsAbA8OU3rJOqyk37M7juoobAXWICl/w==}
@@ -1910,7 +1910,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@livekit/agents-plugin-deepgram@0.4.5(@livekit/agents@0.4.5)':
+  '@livekit/agents-plugin-deepgram@0.5.0(@livekit/agents@0.4.5)':
     dependencies:
       '@livekit/agents': 0.4.5
       ws: 8.18.0
