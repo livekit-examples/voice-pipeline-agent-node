@@ -15,8 +15,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0(@livekit/agents@0.4.5)
       '@livekit/agents-plugin-elevenlabs':
-        specifier: ^0.4.5
-        version: 0.4.5(@livekit/agents@0.4.5)
+        specifier: ^0.5.0
+        version: 0.5.1(@livekit/agents@0.4.5)
       '@livekit/agents-plugin-openai':
         specifier: ^0.7.0
         version: 0.7.1(@livekit/agents@0.4.5)(zod@3.23.8)
@@ -302,11 +302,11 @@ packages:
       '@livekit/agents': ^0.5.0x
       '@livekit/rtc-node': ^0.12.1
 
-  '@livekit/agents-plugin-elevenlabs@0.4.5':
-    resolution: {integrity: sha512-oSqbF4HBMPb17ZbQ5NcJ5HMnIQh8DIUXpR3KtYcFxukgjhEhXJwAgAhsAbA8OU3rJOqyk37M7juoobAXWICl/w==}
+  '@livekit/agents-plugin-elevenlabs@0.5.1':
+    resolution: {integrity: sha512-oWsplr+0D12dXNJpxNaFcFVzd0w7XkOeeieMWbt8ThvAWs8jzRoHjgPfqOCNW1yC/sSCi39Ng6yPu14u8GGjCw==}
     peerDependencies:
-      '@livekit/agents': ^0.4.5
-      '@livekit/rtc-node': ^0.11.1
+      '@livekit/agents': ^0.5.1x
+      '@livekit/rtc-node': ^0.12.1
 
   '@livekit/agents-plugin-openai@0.7.1':
     resolution: {integrity: sha512-qkrS7is/vSO0JnMp9LdoPNEjeefK451hh9byzzDg4PcfaapFIR2+WLKKrFqP8eKNMB4/7nc7ThN26Z5Jr4mRZQ==}
@@ -1933,7 +1933,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-elevenlabs@0.4.5(@livekit/agents@0.4.5)':
+  '@livekit/agents-plugin-elevenlabs@0.5.1(@livekit/agents@0.4.5)':
     dependencies:
       '@livekit/agents': 0.4.5
       ws: 8.18.0
