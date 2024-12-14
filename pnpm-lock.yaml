@@ -19,7 +19,7 @@ importers:
         version: 0.4.5(@livekit/agents@0.4.5)
       '@livekit/agents-plugin-openai':
         specifier: ^0.7.0
-        version: 0.7.0(@livekit/agents@0.4.5)(zod@3.23.8)
+        version: 0.7.1(@livekit/agents@0.4.5)(zod@3.23.8)
       '@livekit/agents-plugin-silero':
         specifier: ^0.4.5
         version: 0.4.5(@livekit/agents@0.4.5)
@@ -308,10 +308,10 @@ packages:
       '@livekit/agents': ^0.4.5
       '@livekit/rtc-node': ^0.11.1
 
-  '@livekit/agents-plugin-openai@0.7.0':
-    resolution: {integrity: sha512-daI5RNR3KUnYv/rZ7Sg9kEERmQDVSAHiaxSEloKL+bBtyofa7FRj8IPM6xOFunCzHwlCqxdqWeZqLd2uaoLK2w==}
+  '@livekit/agents-plugin-openai@0.7.1':
+    resolution: {integrity: sha512-qkrS7is/vSO0JnMp9LdoPNEjeefK451hh9byzzDg4PcfaapFIR2+WLKKrFqP8eKNMB4/7nc7ThN26Z5Jr4mRZQ==}
     peerDependencies:
-      '@livekit/agents': ^0.5.0x
+      '@livekit/agents': ^0.5.1x
       '@livekit/rtc-node': ^0.12.1
 
   '@livekit/agents-plugin-silero@0.4.5':
@@ -372,8 +372,8 @@ packages:
   '@types/node-fetch@2.6.12':
     resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
 
-  '@types/node@18.19.64':
-    resolution: {integrity: sha512-955mDqvO2vFf/oL7V3WiUtiz+BugyX8uVbaT2H8oj3+8dRyH2FLiNdowe7eNqRM7IOIZvzDH76EoAT+gwm6aIQ==}
+  '@types/node@18.19.68':
+    resolution: {integrity: sha512-QGtpFH1vB99ZmTa63K4/FU8twThj4fuVSBkGddTp7uIL/cuoLWIUSL2RcOaigBhfR+hg5pgGkBnkoOxrTVBMKw==}
 
   '@types/node@22.9.1':
     resolution: {integrity: sha512-p8Yy/8sw1caA8CdRIQBG5tiLHmxtQKObCijiAa9Ez+d4+PRffM4054xbju0msf+cvhJpnFEeNjxmVT/0ipktrg==}
@@ -639,6 +639,15 @@ packages:
 
   debug@4.3.7:
     resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.4.0:
+    resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -1261,8 +1270,8 @@ packages:
     resolution: {integrity: sha512-mjLge++8WHfyCZ4IqZ1FbUbtFAfGht7BLCkOeBL1L9PFV27YHwluXkNt7m0Pgf6TR2P5pqVZsD3zqFbFP6QTMw==}
     os: [win32, darwin, linux]
 
-  openai@4.73.0:
-    resolution: {integrity: sha512-NZstV77w3CEol9KQTRBRQ15+Sw6nxVTicAULSjYO4wn9E5gw72Mtp3fAVaBFXyyVPws4241YmFG6ya4L8v03tA==}
+  openai@4.76.3:
+    resolution: {integrity: sha512-BISkI90m8zT7BAMljK0j00TzOoLvmc7AulPxv6EARa++3+hhIK5G6z4xkITurEaA9bvDhQ09kSNKA3DL+rDMwA==}
     hasBin: true
     peerDependencies:
       zod: ^3.23.8
@@ -1554,6 +1563,12 @@ packages:
 
   ts-api-utils@1.4.0:
     resolution: {integrity: sha512-032cPxaEKwM+GT3vA5JXNzIaizx388rhsSW79vGRNGXfRRAdEAn2mvk36PvK5HnOchyWZ7afLEXqYCvPCrzuzQ==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      typescript: '>=4.2.0'
+
+  ts-api-utils@1.4.3:
+    resolution: {integrity: sha512-i3eMG77UTMD0hZhgRS562pv83RC6ukSAC2GMNWc+9dieh/+jDM5u5YG+NHX6VNDRHQcHwmsTHctP9LhbC3WxVw==}
     engines: {node: '>=16'}
     peerDependencies:
       typescript: '>=4.2.0'
@@ -1926,10 +1941,10 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-openai@0.7.0(@livekit/agents@0.4.5)(zod@3.23.8)':
+  '@livekit/agents-plugin-openai@0.7.1(@livekit/agents@0.4.5)(zod@3.23.8)':
     dependencies:
       '@livekit/agents': 0.4.5
-      openai: 4.73.0(zod@3.23.8)
+      openai: 4.76.3(zod@3.23.8)
       sharp: 0.33.5
       ws: 8.18.0
     transitivePeerDependencies:
@@ -2008,7 +2023,7 @@ snapshots:
       '@types/node': 22.9.1
       form-data: 4.0.1
 
-  '@types/node@18.19.64':
+  '@types/node@18.19.68':
     dependencies:
       undici-types: 5.26.5
 
@@ -2040,7 +2055,7 @@ snapshots:
       '@typescript-eslint/types': 8.14.0
       '@typescript-eslint/typescript-estree': 8.14.0(typescript@5.6.3)
       '@typescript-eslint/visitor-keys': 8.14.0
-      debug: 4.3.7
+      debug: 4.4.0
       eslint: 8.57.1
     optionalDependencies:
       typescript: 5.6.3
@@ -2077,12 +2092,12 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.14.0
       '@typescript-eslint/visitor-keys': 8.14.0
-      debug: 4.3.7
+      debug: 4.4.0
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
       semver: 7.6.3
-      ts-api-utils: 1.4.0(typescript@5.6.3)
+      ts-api-utils: 1.4.3(typescript@5.6.3)
     optionalDependencies:
       typescript: 5.6.3
     transitivePeerDependencies:
@@ -2321,6 +2336,10 @@ snapshots:
       ms: 2.1.3
 
   debug@4.3.7:
+    dependencies:
+      ms: 2.1.3
+
+  debug@4.4.0:
     dependencies:
       ms: 2.1.3
 
@@ -2991,9 +3010,9 @@ snapshots:
       onnxruntime-common: 1.20.0
       tar: 7.4.3
 
-  openai@4.73.0(zod@3.23.8):
+  openai@4.76.3(zod@3.23.8):
     dependencies:
-      '@types/node': 18.19.64
+      '@types/node': 18.19.68
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.5.0
@@ -3331,6 +3350,10 @@ snapshots:
   tr46@0.0.3: {}
 
   ts-api-utils@1.4.0(typescript@5.6.3):
+    dependencies:
+      typescript: 5.6.3
+
+  ts-api-utils@1.4.3(typescript@5.6.3):
     dependencies:
       typescript: 5.6.3
 
