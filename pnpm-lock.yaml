@@ -19,7 +19,7 @@ importers:
         version: 0.5.1(@livekit/agents@0.5.1)
       '@livekit/agents-plugin-openai':
         specifier: ^0.7.0
-        version: 0.7.1(@livekit/agents@0.5.1)(zod@3.23.8)
+        version: 0.7.1(@livekit/agents@0.5.1)(zod@3.24.1)
       '@livekit/agents-plugin-silero':
         specifier: ^0.5.0
         version: 0.5.0(@livekit/agents@0.5.1)
@@ -28,7 +28,7 @@ importers:
         version: 16.4.7
       zod:
         specifier: ^3.23.8
-        version: 3.23.8
+        version: 3.24.1
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.2.0
@@ -1667,8 +1667,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@3.23.8:
-    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
 snapshots:
 
@@ -1927,10 +1927,10 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-openai@0.7.1(@livekit/agents@0.5.1)(zod@3.23.8)':
+  '@livekit/agents-plugin-openai@0.7.1(@livekit/agents@0.5.1)(zod@3.24.1)':
     dependencies:
       '@livekit/agents': 0.5.1
-      openai: 4.76.3(zod@3.23.8)
+      openai: 4.76.3(zod@3.24.1)
       sharp: 0.33.5
       ws: 8.18.0
     transitivePeerDependencies:
@@ -1958,7 +1958,7 @@ snapshots:
       pino: 8.21.0
       pino-pretty: 11.3.0
       ws: 8.18.0
-      zod: 3.23.8
+      zod: 3.24.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -3000,7 +3000,7 @@ snapshots:
       onnxruntime-common: 1.20.0
       tar: 7.4.3
 
-  openai@4.76.3(zod@3.23.8):
+  openai@4.76.3(zod@3.24.1):
     dependencies:
       '@types/node': 18.19.70
       '@types/node-fetch': 2.6.12
@@ -3010,7 +3010,7 @@ snapshots:
       formdata-node: 4.4.1
       node-fetch: 2.7.0
     optionalDependencies:
-      zod: 3.23.8
+      zod: 3.24.1
     transitivePeerDependencies:
       - encoding
 
@@ -3460,4 +3460,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@3.23.8: {}
+  zod@3.24.1: {}
