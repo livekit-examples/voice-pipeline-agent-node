@@ -9,20 +9,20 @@ importers:
   .:
     dependencies:
       '@livekit/agents':
-        specifier: ^0.5.0
-        version: 0.5.1
+        specifier: ^0.6.0
+        version: 0.6.4
       '@livekit/agents-plugin-deepgram':
         specifier: ^0.5.0
-        version: 0.5.2(@livekit/agents@0.5.1)
+        version: 0.5.2(@livekit/agents@0.6.4)
       '@livekit/agents-plugin-elevenlabs':
         specifier: ^0.5.0
-        version: 0.5.3(@livekit/agents@0.5.1)
+        version: 0.5.3(@livekit/agents@0.6.4)
       '@livekit/agents-plugin-openai':
         specifier: ^0.7.0
-        version: 0.7.1(@livekit/agents@0.5.1)(zod@3.24.1)
+        version: 0.7.1(@livekit/agents@0.6.4)(zod@3.24.1)
       '@livekit/agents-plugin-silero':
         specifier: ^0.5.0
-        version: 0.5.2(@livekit/agents@0.5.1)
+        version: 0.5.2(@livekit/agents@0.6.4)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.7
@@ -296,10 +296,10 @@ packages:
       '@livekit/agents': ^0.6.1x
       '@livekit/rtc-node': ^0.13.1
 
-  '@livekit/agents@0.5.1':
-    resolution: {integrity: sha512-EKP/UrSQ3HePqCKiFmjTAVNRVtE+SdN2vtka0F9J3Te+ZynpHoSbLgT8dyzFrliYRzIh4fZW7groHhiMux6Wvw==}
+  '@livekit/agents@0.6.4':
+    resolution: {integrity: sha512-QQJJAUG07hHXbKfgtMUTE7T4xiTdmEgCk0ri/i4qXUKPpl5lb37ic0EvQkfbL+KIaajNvy/bph+Z2iGqUMTQYw==}
     peerDependencies:
-      '@livekit/rtc-node': ^0.12.1
+      '@livekit/rtc-node': ^0.13.2
 
   '@livekit/mutex@1.1.1':
     resolution: {integrity: sha512-EsshAucklmpuUAfkABPxJNhzj9v2sG7JuzFDL4ML1oJQSV14sqrpTYnsaOudMAw9yOaW53NU3QQTlUQoRs4czw==}
@@ -1852,25 +1852,25 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@livekit/agents-plugin-deepgram@0.5.2(@livekit/agents@0.5.1)':
+  '@livekit/agents-plugin-deepgram@0.5.2(@livekit/agents@0.6.4)':
     dependencies:
-      '@livekit/agents': 0.5.1
+      '@livekit/agents': 0.6.4
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-elevenlabs@0.5.3(@livekit/agents@0.5.1)':
+  '@livekit/agents-plugin-elevenlabs@0.5.3(@livekit/agents@0.6.4)':
     dependencies:
-      '@livekit/agents': 0.5.1
+      '@livekit/agents': 0.6.4
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-openai@0.7.1(@livekit/agents@0.5.1)(zod@3.24.1)':
+  '@livekit/agents-plugin-openai@0.7.1(@livekit/agents@0.6.4)(zod@3.24.1)':
     dependencies:
-      '@livekit/agents': 0.5.1
+      '@livekit/agents': 0.6.4
       openai: 4.76.3(zod@3.24.1)
       sharp: 0.33.5
       ws: 8.18.0
@@ -1880,16 +1880,16 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@livekit/agents-plugin-silero@0.5.2(@livekit/agents@0.5.1)':
+  '@livekit/agents-plugin-silero@0.5.2(@livekit/agents@0.6.4)':
     dependencies:
-      '@livekit/agents': 0.5.1
+      '@livekit/agents': 0.6.4
       onnxruntime-node: 1.20.1
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents@0.5.1':
+  '@livekit/agents@0.6.4':
     dependencies:
       '@livekit/mutex': 1.1.1
       '@livekit/protocol': 1.29.4
