@@ -22,7 +22,7 @@ importers:
         version: 0.7.1(@livekit/agents@0.5.1)(zod@3.24.1)
       '@livekit/agents-plugin-silero':
         specifier: ^0.5.0
-        version: 0.5.2(@livekit/agents@0.5.1)
+        version: 0.5.3(@livekit/agents@0.5.1)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.7
@@ -290,11 +290,11 @@ packages:
       '@livekit/agents': ^0.5.1x
       '@livekit/rtc-node': ^0.12.1
 
-  '@livekit/agents-plugin-silero@0.5.2':
-    resolution: {integrity: sha512-Xz/doNOqeI5JJJAUHDfQD3kKue7KjQcNQbDSrtJWnYrSKvNiD7Riz3msgVGSGYc0xY+21Q5wptkYJJNzVxP2Ow==}
+  '@livekit/agents-plugin-silero@0.5.3':
+    resolution: {integrity: sha512-e+PAY9+9Ffqj7rDMOoWM+5Np6kgkHEA5etxpTXiJfohnLaA2TBboyEdGZfn+q7QMP0bjoKibD83Mvs7ARRGlDw==}
     peerDependencies:
-      '@livekit/agents': ^0.6.1x
-      '@livekit/rtc-node': ^0.13.1
+      '@livekit/agents': ^0.6.2x
+      '@livekit/rtc-node': ^0.13.2
 
   '@livekit/agents@0.5.1':
     resolution: {integrity: sha512-EKP/UrSQ3HePqCKiFmjTAVNRVtE+SdN2vtka0F9J3Te+ZynpHoSbLgT8dyzFrliYRzIh4fZW7groHhiMux6Wvw==}
@@ -1411,6 +1411,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.0:
+    resolution: {integrity: sha512-DrfFnPzblFmNrIZzg5RzHegbiRWg7KMR7btwi2yjHwx06zsUbO5g613sVwEV7FTwmzJu+Io0lJe2GJ3LxqpvBQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
     engines: {node: '>= 0.4'}
@@ -1880,7 +1885,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@livekit/agents-plugin-silero@0.5.2(@livekit/agents@0.5.1)':
+  '@livekit/agents-plugin-silero@0.5.3(@livekit/agents@0.5.1)':
     dependencies:
       '@livekit/agents': 0.5.1
       onnxruntime-node: 1.20.1
@@ -2021,7 +2026,7 @@ snapshots:
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.3
+      semver: 7.7.0
       ts-api-utils: 1.4.3(typescript@5.6.3)
     optionalDependencies:
       typescript: 5.6.3
@@ -3115,6 +3120,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.6.3: {}
+
+  semver@7.7.0: {}
 
   set-function-length@1.2.2:
     dependencies:
