@@ -13,7 +13,7 @@ importers:
         version: 0.5.1
       '@livekit/agents-plugin-deepgram':
         specifier: ^0.5.0
-        version: 0.5.2(@livekit/agents@0.5.1)
+        version: 0.5.3(@livekit/agents@0.5.1)
       '@livekit/agents-plugin-elevenlabs':
         specifier: ^0.5.0
         version: 0.5.3(@livekit/agents@0.5.1)
@@ -272,11 +272,11 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@livekit/agents-plugin-deepgram@0.5.2':
-    resolution: {integrity: sha512-2vlESGrqIkc7TYQ+38emtWLYc57v69oBV74kP2zHvNUdi9Zk45cx0XV1AdQGq6LbrSygIApdU5b+4jfaikl7OA==}
+  '@livekit/agents-plugin-deepgram@0.5.3':
+    resolution: {integrity: sha512-jTKvR/q6GtMFdQRghiENzP+WfGaHL+dHjKsSRJZnYW1XxlG6j5JsfZMFFT1Ch/COpbaCQwOcFG4PXnUrqq4Llw==}
     peerDependencies:
-      '@livekit/agents': ^0.6.1x
-      '@livekit/rtc-node': ^0.13.1
+      '@livekit/agents': ^0.6.2x
+      '@livekit/rtc-node': ^0.13.2
 
   '@livekit/agents-plugin-elevenlabs@0.5.3':
     resolution: {integrity: sha512-XVdci9xRlT7LxvU07/4CPEu2vy+oqnsq4VIsX8AaYZMMmjFWVUS1HGKSr83ltFGmiRltLU4KWjNcVSnVyw1lkA==}
@@ -1411,6 +1411,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.0:
+    resolution: {integrity: sha512-DrfFnPzblFmNrIZzg5RzHegbiRWg7KMR7btwi2yjHwx06zsUbO5g613sVwEV7FTwmzJu+Io0lJe2GJ3LxqpvBQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
     engines: {node: '>= 0.4'}
@@ -1852,7 +1857,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@livekit/agents-plugin-deepgram@0.5.2(@livekit/agents@0.5.1)':
+  '@livekit/agents-plugin-deepgram@0.5.3(@livekit/agents@0.5.1)':
     dependencies:
       '@livekit/agents': 0.5.1
       ws: 8.18.0
@@ -2021,7 +2026,7 @@ snapshots:
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.3
+      semver: 7.7.0
       ts-api-utils: 1.4.3(typescript@5.6.3)
     optionalDependencies:
       typescript: 5.6.3
@@ -3115,6 +3120,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.6.3: {}
+
+  semver@7.7.0: {}
 
   set-function-length@1.2.2:
     dependencies:
