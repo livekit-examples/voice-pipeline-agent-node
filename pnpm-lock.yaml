@@ -9,20 +9,23 @@ importers:
   .:
     dependencies:
       '@livekit/agents':
-        specifier: ^0.5.0
-        version: 0.5.1
+        specifier: ^0.6.4
+        version: 0.6.4(@livekit/rtc-node@0.13.3)
       '@livekit/agents-plugin-deepgram':
-        specifier: ^0.5.0
-        version: 0.5.2(@livekit/agents@0.5.1)
+        specifier: ^0.5.3
+        version: 0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
       '@livekit/agents-plugin-elevenlabs':
-        specifier: ^0.5.0
-        version: 0.5.3(@livekit/agents@0.5.1)
+        specifier: ^0.6.1
+        version: 0.6.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
       '@livekit/agents-plugin-openai':
-        specifier: ^0.7.0
-        version: 0.7.1(@livekit/agents@0.5.1)(zod@3.24.1)
+        specifier: ^0.8.1
+        version: 0.8.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)(zod@3.24.1)
       '@livekit/agents-plugin-silero':
-        specifier: ^0.5.0
-        version: 0.5.2(@livekit/agents@0.5.1)
+        specifier: ^0.5.3
+        version: 0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
+      '@livekit/rtc-node':
+        specifier: ^0.13.3
+        version: 0.13.3
       dotenv:
         specifier: ^16.4.5
         version: 16.4.7
@@ -272,40 +275,74 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@livekit/agents-plugin-deepgram@0.5.2':
-    resolution: {integrity: sha512-2vlESGrqIkc7TYQ+38emtWLYc57v69oBV74kP2zHvNUdi9Zk45cx0XV1AdQGq6LbrSygIApdU5b+4jfaikl7OA==}
+  '@livekit/agents-plugin-deepgram@0.5.3':
+    resolution: {integrity: sha512-jTKvR/q6GtMFdQRghiENzP+WfGaHL+dHjKsSRJZnYW1XxlG6j5JsfZMFFT1Ch/COpbaCQwOcFG4PXnUrqq4Llw==}
     peerDependencies:
-      '@livekit/agents': ^0.6.1x
-      '@livekit/rtc-node': ^0.13.1
+      '@livekit/agents': ^0.6.2x
+      '@livekit/rtc-node': ^0.13.2
 
-  '@livekit/agents-plugin-elevenlabs@0.5.3':
-    resolution: {integrity: sha512-XVdci9xRlT7LxvU07/4CPEu2vy+oqnsq4VIsX8AaYZMMmjFWVUS1HGKSr83ltFGmiRltLU4KWjNcVSnVyw1lkA==}
+  '@livekit/agents-plugin-elevenlabs@0.6.1':
+    resolution: {integrity: sha512-oflUsv7F9vJeSOABpktPW6FQDU77GKHE175PGJMAEDZ70vevDn8GfLzsyXBl1i0Sp0uOb9+5K/5txTI/6IOE9g==}
     peerDependencies:
-      '@livekit/agents': ^0.6.1x
-      '@livekit/rtc-node': ^0.13.1
+      '@livekit/agents': ^0.6.4x
+      '@livekit/rtc-node': ^0.13.2
 
-  '@livekit/agents-plugin-openai@0.7.1':
-    resolution: {integrity: sha512-qkrS7is/vSO0JnMp9LdoPNEjeefK451hh9byzzDg4PcfaapFIR2+WLKKrFqP8eKNMB4/7nc7ThN26Z5Jr4mRZQ==}
+  '@livekit/agents-plugin-openai@0.8.1':
+    resolution: {integrity: sha512-gvrhhXQkqFixIGYjh/wFwWce/UnEMQ8DccPiGbo44n6eBkIZrndamFT7OSx5avvOnPwT9qLcTJ0BI7b9pQlYtA==}
     peerDependencies:
-      '@livekit/agents': ^0.5.1x
-      '@livekit/rtc-node': ^0.12.1
+      '@livekit/agents': ^0.6.2x
+      '@livekit/rtc-node': ^0.13.2
 
-  '@livekit/agents-plugin-silero@0.5.2':
-    resolution: {integrity: sha512-Xz/doNOqeI5JJJAUHDfQD3kKue7KjQcNQbDSrtJWnYrSKvNiD7Riz3msgVGSGYc0xY+21Q5wptkYJJNzVxP2Ow==}
+  '@livekit/agents-plugin-silero@0.5.3':
+    resolution: {integrity: sha512-e+PAY9+9Ffqj7rDMOoWM+5Np6kgkHEA5etxpTXiJfohnLaA2TBboyEdGZfn+q7QMP0bjoKibD83Mvs7ARRGlDw==}
     peerDependencies:
-      '@livekit/agents': ^0.6.1x
-      '@livekit/rtc-node': ^0.13.1
+      '@livekit/agents': ^0.6.2x
+      '@livekit/rtc-node': ^0.13.2
 
-  '@livekit/agents@0.5.1':
-    resolution: {integrity: sha512-EKP/UrSQ3HePqCKiFmjTAVNRVtE+SdN2vtka0F9J3Te+ZynpHoSbLgT8dyzFrliYRzIh4fZW7groHhiMux6Wvw==}
+  '@livekit/agents@0.6.4':
+    resolution: {integrity: sha512-QQJJAUG07hHXbKfgtMUTE7T4xiTdmEgCk0ri/i4qXUKPpl5lb37ic0EvQkfbL+KIaajNvy/bph+Z2iGqUMTQYw==}
     peerDependencies:
-      '@livekit/rtc-node': ^0.12.1
+      '@livekit/rtc-node': ^0.13.2
 
   '@livekit/mutex@1.1.1':
     resolution: {integrity: sha512-EsshAucklmpuUAfkABPxJNhzj9v2sG7JuzFDL4ML1oJQSV14sqrpTYnsaOudMAw9yOaW53NU3QQTlUQoRs4czw==}
 
   '@livekit/protocol@1.29.4':
     resolution: {integrity: sha512-dsqxvABHilrMA0BU5m1w8cMWSVeDjV2ZUIUDClNQZju3c30DLMfEYDHU5nmXDfaaHjNIgoRbYR7upJMozG8JJg==}
+
+  '@livekit/rtc-node-darwin-arm64@0.13.3':
+    resolution: {integrity: sha512-IP3zlhc434jkucNW6k1PpE+nOFfnXnpSJbFBmZz8tHBmLhJ1R+unVQ2gOtBTsIINhNbB+BG+xJQovw3uKrProQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@livekit/rtc-node-darwin-x64@0.13.3':
+    resolution: {integrity: sha512-yfBsqPiefMO70Xfo9/zUoz2iVzr41Uym87i5GiOHkS+5KWlEvJsb90ZeDBpOIneVK3xAtHpmD6xmGehehD6g9w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@livekit/rtc-node-linux-arm64-gnu@0.13.3':
+    resolution: {integrity: sha512-eToknIUYXCoVj9rIgJmwn5pEAA8TQv+2mWOe6Kd28YupNQMExP5IWgYBjY5V/KYIJbbwqU5xymoGIekC2gr+iA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@livekit/rtc-node-linux-x64-gnu@0.13.3':
+    resolution: {integrity: sha512-NTwD+8bQkHr51HvWjNlusTNIsQ/EExZGYpyJd/bT5MvpcDJ8SyXafgNAyY1JvEU1xvsLG2K7ysSAXX6oA4e/EA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@livekit/rtc-node-win32-x64-msvc@0.13.3':
+    resolution: {integrity: sha512-cRCPMS15ZA2764SnK5wH9CInb3vK92gbHmRBR6F+uzxuGL3+NBjGnSQLzf5rT3HnPk1vZWMEVxX84dVJxp3wPQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@livekit/rtc-node@0.13.3':
+    resolution: {integrity: sha512-S091L/AIduMNxlBn5ey/PmuMnl/dV+LoS85YJ0EjAYJiPO2i8WYeXQTDBAsUgZSCJeTniEdgyHGUSCBCsYdQbQ==}
+    engines: {node: '>= 18'}
 
   '@livekit/typed-emitter@3.0.0':
     resolution: {integrity: sha512-9bl0k4MgBPZu3Qu3R3xy12rmbW17e3bE9yf4YY85gJIQ3ezLEj/uzpKHWBsLaDoL5Mozz8QCgggwIBudYQWeQg==}
@@ -1852,25 +1889,28 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@livekit/agents-plugin-deepgram@0.5.2(@livekit/agents@0.5.1)':
+  '@livekit/agents-plugin-deepgram@0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)':
     dependencies:
-      '@livekit/agents': 0.5.1
+      '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.3)
+      '@livekit/rtc-node': 0.13.3
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-elevenlabs@0.5.3(@livekit/agents@0.5.1)':
+  '@livekit/agents-plugin-elevenlabs@0.6.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)':
     dependencies:
-      '@livekit/agents': 0.5.1
+      '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.3)
+      '@livekit/rtc-node': 0.13.3
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-openai@0.7.1(@livekit/agents@0.5.1)(zod@3.24.1)':
+  '@livekit/agents-plugin-openai@0.8.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)(zod@3.24.1)':
     dependencies:
-      '@livekit/agents': 0.5.1
+      '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.3)
+      '@livekit/rtc-node': 0.13.3
       openai: 4.76.3(zod@3.24.1)
       sharp: 0.33.5
       ws: 8.18.0
@@ -1880,19 +1920,21 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@livekit/agents-plugin-silero@0.5.2(@livekit/agents@0.5.1)':
+  '@livekit/agents-plugin-silero@0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)':
     dependencies:
-      '@livekit/agents': 0.5.1
+      '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.3)
+      '@livekit/rtc-node': 0.13.3
       onnxruntime-node: 1.20.1
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents@0.5.1':
+  '@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3)':
     dependencies:
       '@livekit/mutex': 1.1.1
       '@livekit/protocol': 1.29.4
+      '@livekit/rtc-node': 0.13.3
       '@livekit/typed-emitter': 3.0.0
       commander: 12.1.0
       livekit-server-sdk: 2.9.3
@@ -1909,6 +1951,33 @@ snapshots:
   '@livekit/protocol@1.29.4':
     dependencies:
       '@bufbuild/protobuf': 1.10.0
+
+  '@livekit/rtc-node-darwin-arm64@0.13.3':
+    optional: true
+
+  '@livekit/rtc-node-darwin-x64@0.13.3':
+    optional: true
+
+  '@livekit/rtc-node-linux-arm64-gnu@0.13.3':
+    optional: true
+
+  '@livekit/rtc-node-linux-x64-gnu@0.13.3':
+    optional: true
+
+  '@livekit/rtc-node-win32-x64-msvc@0.13.3':
+    optional: true
+
+  '@livekit/rtc-node@0.13.3':
+    dependencies:
+      '@bufbuild/protobuf': 1.10.0
+      '@livekit/mutex': 1.1.1
+      '@livekit/typed-emitter': 3.0.0
+    optionalDependencies:
+      '@livekit/rtc-node-darwin-arm64': 0.13.3
+      '@livekit/rtc-node-darwin-x64': 0.13.3
+      '@livekit/rtc-node-linux-arm64-gnu': 0.13.3
+      '@livekit/rtc-node-linux-x64-gnu': 0.13.3
+      '@livekit/rtc-node-win32-x64-msvc': 0.13.3
 
   '@livekit/typed-emitter@3.0.0': {}
 
