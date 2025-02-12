@@ -19,7 +19,7 @@ importers:
         version: 0.6.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
       '@livekit/agents-plugin-openai':
         specifier: ^0.8.1
-        version: 0.8.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)(zod@3.24.1)
+        version: 0.8.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)(zod@3.24.2)
       '@livekit/agents-plugin-silero':
         specifier: ^0.5.3
         version: 0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
@@ -31,7 +31,7 @@ importers:
         version: 16.4.7
       zod:
         specifier: ^3.23.8
-        version: 3.24.1
+        version: 3.24.2
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.2.0
@@ -1681,8 +1681,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@3.24.1:
-    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
+  zod@3.24.2:
+    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
 
 snapshots:
 
@@ -1912,11 +1912,11 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-openai@0.8.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)(zod@3.24.1)':
+  '@livekit/agents-plugin-openai@0.8.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)(zod@3.24.2)':
     dependencies:
       '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.3)
       '@livekit/rtc-node': 0.13.3
-      openai: 4.76.3(zod@3.24.1)
+      openai: 4.76.3(zod@3.24.2)
       sharp: 0.33.5
       ws: 8.18.0
     transitivePeerDependencies:
@@ -1946,7 +1946,7 @@ snapshots:
       pino: 8.21.0
       pino-pretty: 11.3.0
       ws: 8.18.0
-      zod: 3.24.1
+      zod: 3.24.2
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -3005,7 +3005,7 @@ snapshots:
       onnxruntime-common: 1.20.1
       tar: 7.4.3
 
-  openai@4.76.3(zod@3.24.1):
+  openai@4.76.3(zod@3.24.2):
     dependencies:
       '@types/node': 18.19.70
       '@types/node-fetch': 2.6.12
@@ -3015,7 +3015,7 @@ snapshots:
       formdata-node: 4.4.1
       node-fetch: 2.7.0
     optionalDependencies:
-      zod: 3.24.1
+      zod: 3.24.2
     transitivePeerDependencies:
       - encoding
 
@@ -3467,4 +3467,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@3.24.1: {}
+  zod@3.24.2: {}
