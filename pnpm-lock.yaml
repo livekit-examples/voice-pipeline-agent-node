@@ -13,7 +13,7 @@ importers:
         version: 0.6.4(@livekit/rtc-node@0.13.3)
       '@livekit/agents-plugin-deepgram':
         specifier: ^0.5.3
-        version: 0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
+        version: 0.5.4(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
       '@livekit/agents-plugin-elevenlabs':
         specifier: ^0.6.1
         version: 0.6.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
@@ -275,11 +275,11 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@livekit/agents-plugin-deepgram@0.5.3':
-    resolution: {integrity: sha512-jTKvR/q6GtMFdQRghiENzP+WfGaHL+dHjKsSRJZnYW1XxlG6j5JsfZMFFT1Ch/COpbaCQwOcFG4PXnUrqq4Llw==}
+  '@livekit/agents-plugin-deepgram@0.5.4':
+    resolution: {integrity: sha512-A/gnBvppUf+FRp1+3zXW+88a+g3alANDzx/FZIeAREg01kFoQg0GWAdvNFTbNCpFR/EXhJdZsNeeBrkVNSUDRw==}
     peerDependencies:
-      '@livekit/agents': ^0.6.2x
-      '@livekit/rtc-node': ^0.13.2
+      '@livekit/agents': ^0.7.0x
+      '@livekit/rtc-node': ^0.13.4
 
   '@livekit/agents-plugin-elevenlabs@0.6.1':
     resolution: {integrity: sha512-oflUsv7F9vJeSOABpktPW6FQDU77GKHE175PGJMAEDZ70vevDn8GfLzsyXBl1i0Sp0uOb9+5K/5txTI/6IOE9g==}
@@ -1673,6 +1673,18 @@ packages:
       utf-8-validate:
         optional: true
 
+  ws@8.18.1:
+    resolution: {integrity: sha512-RKW2aJZMXeMxVpnZ6bck+RswznaxmzdULiBr6KY7XkTnW8uvt0iT9H5DkHUChXrc+uurzwa0rVI16n/Xzjdz1w==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   yallist@5.0.0:
     resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
     engines: {node: '>=18'}
@@ -1894,11 +1906,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@livekit/agents-plugin-deepgram@0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)':
+  '@livekit/agents-plugin-deepgram@0.5.4(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)':
     dependencies:
       '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.3)
       '@livekit/rtc-node': 0.13.3
-      ws: 8.18.0
+      ws: 8.18.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -3462,6 +3474,8 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.18.0: {}
+
+  ws@8.18.1: {}
 
   yallist@5.0.0: {}
 
