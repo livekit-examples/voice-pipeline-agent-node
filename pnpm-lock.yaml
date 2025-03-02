@@ -22,7 +22,7 @@ importers:
         version: 0.8.2(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)(zod@3.24.1)
       '@livekit/agents-plugin-silero':
         specifier: ^0.5.3
-        version: 0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
+        version: 0.5.4(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)
       '@livekit/rtc-node':
         specifier: ^0.13.3
         version: 0.13.3
@@ -293,11 +293,11 @@ packages:
       '@livekit/agents': ^0.7.0x
       '@livekit/rtc-node': ^0.13.4
 
-  '@livekit/agents-plugin-silero@0.5.3':
-    resolution: {integrity: sha512-e+PAY9+9Ffqj7rDMOoWM+5Np6kgkHEA5etxpTXiJfohnLaA2TBboyEdGZfn+q7QMP0bjoKibD83Mvs7ARRGlDw==}
+  '@livekit/agents-plugin-silero@0.5.4':
+    resolution: {integrity: sha512-+6KehMAu9qJATENkKz/MQQufeOeiDzRBIsQGT90Ms0tvMk6JPKwdJzo1sJqVzy4so5/LHMwc2YKMiHcS/rqD4w==}
     peerDependencies:
-      '@livekit/agents': ^0.6.2x
-      '@livekit/rtc-node': ^0.13.2
+      '@livekit/agents': ^0.7.0x
+      '@livekit/rtc-node': ^0.13.4
 
   '@livekit/agents@0.6.4':
     resolution: {integrity: sha512-QQJJAUG07hHXbKfgtMUTE7T4xiTdmEgCk0ri/i4qXUKPpl5lb37ic0EvQkfbL+KIaajNvy/bph+Z2iGqUMTQYw==}
@@ -912,8 +912,8 @@ packages:
   for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
 
-  foreground-child@3.3.0:
-    resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
+  foreground-child@3.3.1:
+    resolution: {integrity: sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw==}
     engines: {node: '>=14'}
 
   form-data-encoder@1.7.2:
@@ -1975,12 +1975,12 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@livekit/agents-plugin-silero@0.5.3(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)':
+  '@livekit/agents-plugin-silero@0.5.4(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.3))(@livekit/rtc-node@0.13.3)':
     dependencies:
       '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.3)
       '@livekit/rtc-node': 0.13.3
       onnxruntime-node: 1.20.1
-      ws: 8.18.0
+      ws: 8.18.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -2720,7 +2720,7 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  foreground-child@3.3.0:
+  foreground-child@3.3.1:
     dependencies:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
@@ -2794,7 +2794,7 @@ snapshots:
 
   glob@10.4.5:
     dependencies:
-      foreground-child: 3.3.0
+      foreground-child: 3.3.1
       jackspeak: 3.4.3
       minimatch: 9.0.5
       minipass: 7.1.2
