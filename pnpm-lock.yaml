@@ -9,20 +9,20 @@ importers:
   .:
     dependencies:
       '@livekit/agents':
-        specifier: ^0.6.4
-        version: 0.6.4(@livekit/rtc-node@0.13.6)
+        specifier: ^0.7.0
+        version: 0.7.0(@livekit/rtc-node@0.13.6)
       '@livekit/agents-plugin-deepgram':
         specifier: ^0.5.3
-        version: 0.5.4(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)
+        version: 0.5.4(@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)
       '@livekit/agents-plugin-elevenlabs':
         specifier: ^0.6.1
-        version: 0.6.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)
+        version: 0.6.1(@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)
       '@livekit/agents-plugin-openai':
         specifier: ^0.8.1
-        version: 0.8.2(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)(zod@3.24.2)
+        version: 0.8.2(@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)(zod@3.24.2)
       '@livekit/agents-plugin-silero':
         specifier: ^0.5.3
-        version: 0.5.4(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)
+        version: 0.5.4(@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)
       '@livekit/rtc-node':
         specifier: ^0.13.3
         version: 0.13.6
@@ -299,10 +299,10 @@ packages:
       '@livekit/agents': ^0.7.0x
       '@livekit/rtc-node': ^0.13.4
 
-  '@livekit/agents@0.6.4':
-    resolution: {integrity: sha512-QQJJAUG07hHXbKfgtMUTE7T4xiTdmEgCk0ri/i4qXUKPpl5lb37ic0EvQkfbL+KIaajNvy/bph+Z2iGqUMTQYw==}
+  '@livekit/agents@0.7.0':
+    resolution: {integrity: sha512-rK9exP/NCGij8W5qNB3ceAOQ8N87z35vq/IOecC4zdFyTYFLmWo0QbO9I9+E6ZGAV8j/GzVxJJkyRpUUJuh9yg==}
     peerDependencies:
-      '@livekit/rtc-node': ^0.13.2
+      '@livekit/rtc-node': ^0.13.4
 
   '@livekit/mutex@1.1.1':
     resolution: {integrity: sha512-EsshAucklmpuUAfkABPxJNhzj9v2sG7JuzFDL4ML1oJQSV14sqrpTYnsaOudMAw9yOaW53NU3QQTlUQoRs4czw==}
@@ -1961,27 +1961,27 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@livekit/agents-plugin-deepgram@0.5.4(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)':
+  '@livekit/agents-plugin-deepgram@0.5.4(@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)':
     dependencies:
-      '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.6)
+      '@livekit/agents': 0.7.0(@livekit/rtc-node@0.13.6)
       '@livekit/rtc-node': 0.13.6
       ws: 8.18.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-elevenlabs@0.6.1(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)':
+  '@livekit/agents-plugin-elevenlabs@0.6.1(@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)':
     dependencies:
-      '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.6)
+      '@livekit/agents': 0.7.0(@livekit/rtc-node@0.13.6)
       '@livekit/rtc-node': 0.13.6
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-openai@0.8.2(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)(zod@3.24.2)':
+  '@livekit/agents-plugin-openai@0.8.2(@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)(zod@3.24.2)':
     dependencies:
-      '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.6)
+      '@livekit/agents': 0.7.0(@livekit/rtc-node@0.13.6)
       '@livekit/rtc-node': 0.13.6
       openai: 4.86.1(ws@8.18.1)(zod@3.24.2)
       sharp: 0.33.5
@@ -1992,9 +1992,9 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@livekit/agents-plugin-silero@0.5.4(@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)':
+  '@livekit/agents-plugin-silero@0.5.4(@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)':
     dependencies:
-      '@livekit/agents': 0.6.4(@livekit/rtc-node@0.13.6)
+      '@livekit/agents': 0.7.0(@livekit/rtc-node@0.13.6)
       '@livekit/rtc-node': 0.13.6
       onnxruntime-node: 1.20.1
       ws: 8.18.1
@@ -2002,7 +2002,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents@0.6.4(@livekit/rtc-node@0.13.6)':
+  '@livekit/agents@0.7.0(@livekit/rtc-node@0.13.6)':
     dependencies:
       '@livekit/mutex': 1.1.1
       '@livekit/protocol': 1.29.4
@@ -2012,7 +2012,7 @@ snapshots:
       livekit-server-sdk: 2.9.3
       pino: 8.21.0
       pino-pretty: 11.3.0
-      ws: 8.18.0
+      ws: 8.18.1
       zod: 3.24.2
     transitivePeerDependencies:
       - bufferutil
