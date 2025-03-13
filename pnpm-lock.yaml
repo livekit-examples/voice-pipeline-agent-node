@@ -18,8 +18,8 @@ importers:
         specifier: ^0.6.1
         version: 0.6.2(@livekit/agents@0.7.1(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)
       '@livekit/agents-plugin-openai':
-        specifier: ^0.8.1
-        version: 0.8.2(@livekit/agents@0.7.1(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)(zod@3.24.2)
+        specifier: ^0.9.0
+        version: 0.9.0(@livekit/agents@0.7.1(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)(zod@3.24.2)
       '@livekit/agents-plugin-silero':
         specifier: ^0.5.3
         version: 0.5.5(@livekit/agents@0.7.1(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)
@@ -287,10 +287,10 @@ packages:
       '@livekit/agents': ^0.7.1x
       '@livekit/rtc-node': ^0.13.4
 
-  '@livekit/agents-plugin-openai@0.8.2':
-    resolution: {integrity: sha512-QMvsHQxY+tiUblAQiy1XEx+d4oh70EZzG9Or3hTM0Ozl+S1rBaGz9QD2wRnB++4UBr6p62KOvTMswSF+8Fw4gg==}
+  '@livekit/agents-plugin-openai@0.9.0':
+    resolution: {integrity: sha512-mHhSTUhK77DeGsF+Y1ZEd0yGyKkZ9RcdEipndsjpwOCbdBa2TryKdEJFv71U7rq45amnvF1m+anYkDxz1ZPzhw==}
     peerDependencies:
-      '@livekit/agents': ^0.7.0x
+      '@livekit/agents': ^0.7.1x
       '@livekit/rtc-node': ^0.13.4
 
   '@livekit/agents-plugin-silero@0.5.5':
@@ -2006,7 +2006,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-openai@0.8.2(@livekit/agents@0.7.1(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)(zod@3.24.2)':
+  '@livekit/agents-plugin-openai@0.9.0(@livekit/agents@0.7.1(@livekit/rtc-node@0.13.6))(@livekit/rtc-node@0.13.6)(zod@3.24.2)':
     dependencies:
       '@livekit/agents': 0.7.1(@livekit/rtc-node@0.13.6)
       '@livekit/rtc-node': 0.13.6
