@@ -28,6 +28,6 @@
     "@livekit/agents-plugin-silero": "^0.5.3",
     "@livekit/rtc-node": "^0.13.18",
     "dotenv": "^16.4.5",
-    "zod": "^3.23.8"
+    "zod": "^4.0.0"
   }
 }
