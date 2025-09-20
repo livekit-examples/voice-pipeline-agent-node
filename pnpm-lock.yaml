@@ -19,7 +19,7 @@ importers:
         version: 0.6.2(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)
       '@livekit/agents-plugin-openai':
         specifier: ^0.9.0
-        version: 0.9.0(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)(zod@3.24.2)
+        version: 0.9.0(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)(zod@4.1.11)
       '@livekit/agents-plugin-silero':
         specifier: ^0.5.3
         version: 0.5.5(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)
@@ -30,8 +30,8 @@ importers:
         specifier: ^16.4.5
         version: 16.4.7
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.0.0
+        version: 4.1.11
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.2.0
@@ -1312,6 +1312,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -1824,6 +1825,9 @@ packages:
   zod@3.24.2:
     resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
 
+  zod@4.1.11:
+    resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
+
 snapshots:
 
   '@babel/code-frame@7.26.2':
@@ -2059,11 +2063,11 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-openai@0.9.0(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)(zod@3.24.2)':
+  '@livekit/agents-plugin-openai@0.9.0(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)(zod@4.1.11)':
     dependencies:
       '@livekit/agents': 0.7.9(@livekit/rtc-node@0.13.18)
       '@livekit/rtc-node': 0.13.18
-      openai: 4.86.1(ws@8.18.1)(zod@3.24.2)
+      openai: 4.86.1(ws@8.18.1)(zod@4.1.11)
       sharp: 0.33.5
       ws: 8.18.1
     transitivePeerDependencies:
@@ -3240,7 +3244,7 @@ snapshots:
       onnxruntime-common: 1.21.0
       tar: 7.4.3
 
-  openai@4.86.1(ws@8.18.1)(zod@3.24.2):
+  openai@4.86.1(ws@8.18.1)(zod@4.1.11):
     dependencies:
       '@types/node': 18.19.83
       '@types/node-fetch': 2.6.12
@@ -3251,7 +3255,7 @@ snapshots:
       node-fetch: 2.7.0
     optionalDependencies:
       ws: 8.18.1
-      zod: 3.24.2
+      zod: 4.1.11
     transitivePeerDependencies:
       - encoding
 
@@ -3768,3 +3772,5 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.24.2: {}
+
+  zod@4.1.11: {}
