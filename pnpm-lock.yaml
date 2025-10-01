@@ -15,8 +15,8 @@ importers:
         specifier: ^0.5.3
         version: 0.5.4(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)
       '@livekit/agents-plugin-elevenlabs':
-        specifier: ^0.6.1
-        version: 0.6.2(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)
+        specifier: ^1.0.0
+        version: 1.0.7(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)
       '@livekit/agents-plugin-openai':
         specifier: ^0.9.0
         version: 0.9.0(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)(zod@3.24.2)
@@ -290,11 +290,11 @@ packages:
       '@livekit/agents': ^0.7.0x
       '@livekit/rtc-node': ^0.13.4
 
-  '@livekit/agents-plugin-elevenlabs@0.6.2':
-    resolution: {integrity: sha512-wDudFH8WGxqdVSRsLv3UDGrrWRrTfdSGuf5YMlQEsKs/M1kBPw1vuf5yLAf7UGhndj+HX7r+n/AH7Gmux//Tcw==}
+  '@livekit/agents-plugin-elevenlabs@1.0.7':
+    resolution: {integrity: sha512-tBZ0k58rfjbCh6DVex/dPGjccDLwrnArIxYBLEospqxwYQ/g9PxZx4Xf+WbXm+S3u0y0ulH+W7xcGzFxsAFggA==}
     peerDependencies:
-      '@livekit/agents': ^0.7.1x
-      '@livekit/rtc-node': ^0.13.4
+      '@livekit/agents': 1.0.7
+      '@livekit/rtc-node': ^0.13.12
 
   '@livekit/agents-plugin-openai@0.9.0':
     resolution: {integrity: sha512-mHhSTUhK77DeGsF+Y1ZEd0yGyKkZ9RcdEipndsjpwOCbdBa2TryKdEJFv71U7rq45amnvF1m+anYkDxz1ZPzhw==}
@@ -1312,6 +1312,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -2050,11 +2051,11 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@livekit/agents-plugin-elevenlabs@0.6.2(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)':
+  '@livekit/agents-plugin-elevenlabs@1.0.7(@livekit/agents@0.7.9(@livekit/rtc-node@0.13.18))(@livekit/rtc-node@0.13.18)':
     dependencies:
       '@livekit/agents': 0.7.9(@livekit/rtc-node@0.13.18)
       '@livekit/rtc-node': 0.13.18
-      ws: 8.18.1
+      ws: 8.18.3
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
