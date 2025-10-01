@@ -1,6 +1,5 @@
-<a href="https://livekit.io/">
-  <img src="./.github/assets/livekit-mark.png" alt="LiveKit logo" width="100" height="100">
-</a>
+> [!WARNING]
+> This example is outdated. See the [agent-starter-node](https://github.com/livekit-examples/agent-starter-node) repository for the latest example.
 
 # Node.js Voice Pipeline Agent
 
